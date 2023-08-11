@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <StartupObject>TrailUnknownLauncher.App</StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <Nullable>disable</Nullable>
+    <Version>1.0.1</Version>
+    <DelaySign>false</DelaySign>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\User\Desktop\Trail Unknown\Trail_Unknown_Launcher\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>false</Optimize>
+    <WarningLevel>0</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\icon.ico" />
+    <None Remove="images\img1.png" />
+    <None Remove="overgrowncity.png" />
+    <None Remove="peakpx.png" />
+    <None Remove="Topic.png" />
+    <None Remove="TrailUnknownTopic1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\icon.ico" />
+    <Resource Include="images\img1.png" />
+    <Resource Include="overgrowncity.png" />
+    <Resource Include="peakpx.png" />
+    <Resource Include="Topic.png" />
+    <Resource Include="TrailUnknownTopic1.png" />
+  </ItemGroup>
+
+</Project>
