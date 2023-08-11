@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BulletScript : MonoBehaviour
+{
+    public GameObject hitEffect;
+
+    void OnCollisionEnter2D(Collision2D collision2d)
+    {
+        Instantiate(hitEffect, transform.position, transform.rotation);
+        Destroy(this.gameObject);
+    }
+
+}
