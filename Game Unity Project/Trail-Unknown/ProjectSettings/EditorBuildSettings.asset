@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 15347203fd85bae41876a6a99dca0605
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 42ca2c56cf5ef624b85eff0d8eb6f5de
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: aea0aeba6304c3241ad0d42a4f5b63fe
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 94dfda80d4c5aa64cb00ebc12c732b96
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: ff28b722cb457684d96440203fd08760
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: e8074b1eecd795d4e91b90fad20d9a25
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 4aee59f2a8d82d847b5ef71b2171f84f
+  - enabled: 1
+    path: Assets/Scenes/Level 7.unity
+    guid: 0cba9895fa906bd4da3d7443e3d01982
+  - enabled: 1
+    path: Assets/Scenes/PlayMenu.unity
+    guid: fd75f88e70364a24484f4553f642189e
+  - enabled: 1
+    path: Assets/Scenes/ChallengeModeMenu.unity
+    guid: 42c0043a930374349bf52b5f823b2a7d
+  - enabled: 1
+    path: Assets/Scenes/LeaderboardTimeUsed.unity
+    guid: 86b4fc508d3c7f541bd39cbaa84959ad
+  - enabled: 1
+    path: Assets/Scenes/LeaderboardTimeLimit.unity
+    guid: 717083b8394a8514e910abcaf689f2be
+  - enabled: 1
+    path: Assets/Scenes/LeaderboardTimeTrial.unity
+    guid: 3b10c9205151ba24b975b51b002eb01a
+  - enabled: 1
+    path: Assets/Scenes/ChallengeModeTimeUsed.unity
+    guid: 5749f94b7f3b60f469893cbd7a801370
+  - enabled: 1
+    path: Assets/Scenes/ChallengeModeTimelimit.unity
+    guid: 7d454535ae81b4945ba3655e08626502
+  - enabled: 1
+    path: Assets/Scenes/ChallengeModeTimeTrial.unity
+    guid: 6b69a023fdbb4634e80e77fc706d9521
+  m_configObjects: {}
