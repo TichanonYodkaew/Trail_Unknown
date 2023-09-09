@@ -5,6 +5,11 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     private bool alradycheck = false;
+    [SerializeField] private GameObject AlarmLight;
+
+
+
+    //public 
     [SerializeField] private AudioSource checkSFX;
     [SerializeField] private AudioSource alreadycheckSFX;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -15,13 +20,14 @@ public class Checkpoint : MonoBehaviour
             {
                 alradycheck = true;
                 checkSFX.Play();
+                AlarmLight.GetComponent<SpriteRenderer>().color= Color.green;
                 PlayerManager.lastCheckPointPos = transform.position;
             }
             else if (alradycheck == true)
             {
-                alreadycheckSFX.Play();      
+                alreadycheckSFX.Play();
+                AlarmLight.GetComponent<SpriteRenderer>().color= Color.green;      
             }
-            
         }
     }
 }
