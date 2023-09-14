@@ -60,6 +60,7 @@ public class PauseMenu : MonoBehaviour
         PlayerManager.lastCheckPointPos = new Vector2(0, 0);
         audioSource.PlayOneShot(audioclip);
         Time.timeScale = 1f;
+        GameIsPause = false;
         StartCoroutine(Delayloadscene("Menu"));
     }
 
@@ -69,6 +70,7 @@ public class PauseMenu : MonoBehaviour
         audioSource.PlayOneShot(audioclip);
         PlayerManager.lastCheckPointPos = new Vector2(0, 0);
         Time.timeScale = 1f;
+        GameIsPause = false;
         StartCoroutine(DelayQuit());
     }
 
